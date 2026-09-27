@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Frontend Crafty — Webflow & Wordpress development for designers.">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend_Man.</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                    d="M18.9082 12.9519C17.1705 14.5393 17.075 14.6265 17.0241 14.7348C17.0212 14.7411 17.0184 14.7474 17.0154 14.7542C17.0122 14.7614 17.0088 14.7691 17.0048 14.7776C16.8754 15.0552 16.938 15.3767 17.1655 15.5917C17.2302 15.6522 17.3221 15.7148 17.3972 15.744L17.5225 15.7941L19.2715 15.8004L21.0186 15.8066L21.0186 18.4658L21.0186 21.127L15.5855 21.127L10.1525 21.127L8.43678 19.1879C7.49126 18.1214 6.68768 17.2197 6.65011 17.1863C6.46226 17.0214 6.1617 16.9671 5.92376 17.0569C5.69417 17.1425 5.51675 17.3595 5.47083 17.6079C5.45622 17.6914 5.44787 18.2633 5.44787 19.3048L5.44787 20.8765L2.77623 20.8765L0.104583 20.8765L0.104583 15.8901L0.104583 10.9038L2.07284 9.16302C4.00143 7.45776 4.04109 7.42019 4.11205 7.28034C4.17884 7.15094 4.1851 7.11963 4.1851 6.96726C4.18302 6.82742 4.17467 6.77732 4.12666 6.67296C4.05152 6.51016 3.92838 6.3891 3.76975 6.31396L3.64243 6.25552L1.82237 6.25552L0.000222925 6.25552L0.000223039 3.63397L0.000223154 1.01241L1.16489 0.997803C1.80358 0.991541 3.87828 0.974844 5.77139 0.964408C7.66659 0.951884 9.42612 0.939361 9.68285 0.937274L10.1504 0.931012L12.2981 2.97232C12.4246 3.09235 12.544 3.20579 12.6569 3.31299C14.3854 4.95459 14.5743 5.13401 14.7757 5.14939C14.8004 5.15127 14.8253 5.15069 14.8533 5.15004C14.8688 5.14967 14.8852 5.14929 14.903 5.14929C15.0533 5.14929 15.0971 5.14094 15.1952 5.09293C15.3455 5.01779 15.4812 4.88421 15.5479 4.74228L15.6022 4.62748L15.598 2.76568L15.5939 0.901791L16.0781 0.899704C16.3432 0.899704 17.525 0.891483 18.7158 0.883199L18.7435 0.883007C19.9436 0.874658 20.9288 0.870483 20.9351 0.874658C20.9455 0.885094 21.0144 9.37592 21.0102 10.3987L21.0081 11.0353L19.2653 12.6257C19.1391 12.741 19.0202 12.8496 18.9082 12.9519ZM15.6245 6.79924C15.6307 6.8556 15.6495 8.43771 15.6641 10.3141C15.6787 12.1905 15.6892 14.069 15.6871 14.4886L15.685 15.2504L15.6286 15.3694C15.5243 15.5906 15.3093 15.7513 15.0693 15.7806C15.0066 15.7889 12.9445 15.791 10.4878 15.7847L6.02115 15.7722L5.88966 15.7117C5.72685 15.6365 5.57449 15.4758 5.50561 15.3068L5.4576 15.1878L5.4576 11.0029L5.4576 6.81803L5.50561 6.69905C5.57449 6.52999 5.72686 6.36927 5.88966 6.29413L6.02115 6.2336L7.3361 6.22108C8.06037 6.21273 10.1017 6.20438 11.8758 6.20021L15.1006 6.19186L15.1987 6.23778C15.4157 6.33797 15.5994 6.578 15.6245 6.79924Z"
+                    fill="black" />
+            </svg>
+        </div>
+
+        <button class="humburger" id="humburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+    </header>
+
+    <div class="nav">
+        <div class="navContainer">
+            <div class="navHeader">
+                <div class="navlogo">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                                d="M18.9082 12.9519C17.1705 14.5393 17.075 14.6265 17.0241 14.7348C17.0212 14.7411 17.0184 14.7474 17.0154 14.7542C17.0122 14.7614 17.0088 14.7691 17.0048 14.7776C16.8754 15.0552 16.938 15.3767 17.1655 15.5917C17.2302 15.6522 17.3221 15.7148 17.3972 15.744L17.5225 15.7941L19.2715 15.8004L21.0186 15.8066L21.0186 18.4658L21.0186 21.127L15.5855 21.127L10.1525 21.127L8.43678 19.1879C7.49126 18.1214 6.68768 17.2197 6.65011 17.1863C6.46226 17.0214 6.1617 16.9671 5.92376 17.0569C5.69417 17.1425 5.51675 17.3595 5.47083 17.6079C5.45622 17.6914 5.44787 18.2633 5.44787 19.3048L5.44787 20.8765L2.77623 20.8765L0.104583 20.8765L0.104583 15.8901L0.104583 10.9038L2.07284 9.16302C4.00143 7.45776 4.04109 7.42019 4.11205 7.28034C4.17884 7.15094 4.1851 7.11963 4.1851 6.96726C4.18302 6.82742 4.17467 6.77732 4.12666 6.67296C4.05152 6.51016 3.92838 6.3891 3.76975 6.31396L3.64243 6.25552L1.82237 6.25552L0.000222925 6.25552L0.000223039 3.63397L0.000223154 1.01241L1.16489 0.997803C1.80358 0.991541 3.87828 0.974844 5.77139 0.964408C7.66659 0.951884 9.42612 0.939361 9.68285 0.937274L10.1504 0.931012L12.2981 2.97232C12.4246 3.09235 12.544 3.20579 12.6569 3.31299C14.3854 4.95459 14.5743 5.13401 14.7757 5.14939C14.8004 5.15127 14.8253 5.15069 14.8533 5.15004C14.8688 5.14967 14.8852 5.14929 14.903 5.14929C15.0533 5.14929 15.0971 5.14094 15.1952 5.09293C15.3455 5.01779 15.4812 4.88421 15.5479 4.74228L15.6022 4.62748L15.598 2.76568L15.5939 0.901791L16.0781 0.899704C16.3432 0.899704 17.525 0.891483 18.7158 0.883199L18.7435 0.883007C19.9436 0.874658 20.9288 0.870483 20.9351 0.874658C20.9455 0.885094 21.0144 9.37592 21.0102 10.3987L21.0081 11.0353L19.2653 12.6257C19.1391 12.741 19.0202 12.8496 18.9082 12.9519ZM15.6245 6.79924C15.6307 6.8556 15.6495 8.43771 15.6641 10.3141C15.6787 12.1905 15.6892 14.069 15.6871 14.4886L15.685 15.2504L15.6286 15.3694C15.5243 15.5906 15.3093 15.7513 15.0693 15.7806C15.0066 15.7889 12.9445 15.791 10.4878 15.7847L6.02115 15.7722L5.88966 15.7117C5.72685 15.6365 5.57449 15.4758 5.50561 15.3068L5.4576 15.1878L5.4576 11.0029L5.4576 6.81803L5.50561 6.69905C5.57449 6.52999 5.72686 6.36927 5.88966 6.29413L6.02115 6.2336L7.3361 6.22108C8.06037 6.21273 10.1017 6.20438 11.8758 6.20021L15.1006 6.19186L15.1987 6.23778C15.4157 6.33797 15.5994 6.578 15.6245 6.79924Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="navClose">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path
+                            d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="navLinks">
+                <p><a href="#section2">About Me</a></p>
+                <p><a href="#section3">Why me</a></p>
+                <p><a href="#section4">projects</a></p>
+                <p><a href="#section5">approach</a></p>
+                <p><a href="#section6">save money</a></p>
+            </div>
+            <div class="navBottom">
+                <div class="social">
+                    <div class="watsapp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z">
+                            </path>
+                        </svg></div>
+                    <div class="linkdIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="email">
+                        Umer78f@gmail.com
+                    </div>
+                </div>
+                <div class="navClose">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path
+                            d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="heroNav">
+                <p><a href="#section2">About Me</a></p>
+                <p><a href="#section3">Why me</a></p>
+                <p><a href="#section4">projects</a></p>
+                <p><a href="#section5">approach</a></p>
+                <p><a href="#section6">save money</a></p>
+            </div>
+            <div class="heroTitle">
+                <h1>Frontend</h1>
+                <h1>Crafty</h1>
+            </div>
+            <div class="heroImg">
+                <div class="imgWrapper">
+                    <img src="/assets/images/man.webp" alt="Portrait of the frontend developer" loading="eager">
+                </div>
+            </div>
+
+            <div class="heroBottom">
+                <div class="btmleft">
+                    <p>pakistan origin</p>
+                    <h3>working with europe</h3>
+                </div>
+                <div class="btmcenter">
+                    <h2>Webflow and Wordpress <br> For Designers</h2>
+                </div>
+                <div class="btmright">
+                    <p>Webflow and wordpress</p>
+                    <h3>GSAP ANIMATIONS</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="section2" class="about section2">
+            <div class="wraper">
+                <h1>Simply About</h1>
+            </div>
+        </section>
+
+        <section id="section3" class="aboutDesc section3">
+
+            <div class="sec3Header">
+                <div>pixel-perfect</div>
+                <div>support</div>
+                <div>/code-quality</div>
+                <div>//hassle-free</div>
+            </div>
+            <div class="cards">
+
+                <div id="card1" class="card">
+                    <h1>Leads</h1>
+                    <div>
+                        <h3>Projects At ArtyDevs</h3>
+                        <div class="cardTags">
+                            <div class="cardTag">ArtyDevs.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card2" class="card">
+                    <h1>Awwards 12+</h1>
+                    <div>
+                        <h3>Won With Partners</h3>
+                        <div class="cardTags">
+                            <div class="cardTag">fwa</div>
+                            <div class="cardTag">css design</div>
+                            <div class="cardTag">awwwards</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="card3" class="card">
+                    <h1>98%</h1>
+                    <div>
+                        <h3>Upwork Job Success</h3>
+                        <div class="cardTags">
+                            <div class="cardTag">TOP RATED</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="card4" class="card">
+                    <h1>I am Human</h1>
+                    <div>
+                        <h3>I Love code, humor and Designers</h3>
+                        <div class="cardTags">
+                            <div class="cardTag">10+ reviews</div>
+                            <div class="cardTag">satisfied customers</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3Content">
+                <div style="text-align: center;">
+                    <h1>Increase</h1>
+                </div>
+                <div style="display: flex; justify-content: space-between; width: 100%;">
+                    <h1>Your</h1>
+                    <h1 style="text-align: end;color: whitesmoke;">Design Profit</h1>
+                </div>
+                <div style="text-align: end;">
+                    <h1>with</h1>
+                </div>
+                <div>
+                    <h1>High Standard</h1>
+                </div>
+                <div style="text-align: end; color: whitesmoke;">
+                    <h1>Development</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="section4" class="projects section4">
+            <div class="work">
+                <div class="sec4img">
+                    <img src="/assets/images/work2.webp" alt="Join Mystic project preview" loading="lazy">
+                </div>
+                <a href="" class="workCard">
+                    <h2>Join.Mystic</h2>
+                    <video loop autoplay muted playsinline preload="none" src="/assets/videos/work-video2.mp4"></video>
+                </a>
+
+            </div>
+            <div class="work">
+                <div class="sec4img">
+                    <img src="/assets/images/trains.webp" alt="ailit.rail project preview" loading="lazy">
+                </div>
+                <a id="workCard2" href="" class="workCard">
+                    <h2>ailit.rail</h2>
+                    <video loop autoplay muted playsinline preload="none" src="/assets/videos/trains.mp4"></video>
+                </a>
+            </div>
+            <div class="work">
+                <div class="sec4img">
+                    <img src="/assets/images/toggle.webp" alt="toggle.studio project preview" loading="lazy">
+                </div>
+                <a id="workCard3" href="" class="workCard">
+                    <h2>toogle.studio</h2>
+                    <video loop autoplay muted playsinline preload="none" src="/assets/videos/toggle.mp4"></video>
+                </a>
+            </div>
+        </section>
+
+        <section id="section5" class="whyMe section5">
+            <!-- Left Side: Alina -->
+            <div class="alina">
+                <ul>
+                    <h3>Alina</h3>
+                    <li>Bugless</li>
+                    <li>PixelPerfect</li>
+                    <li>On-time deadlines</li>
+                    <li>Fixed Price Only</li>
+                    <li>Free Light Animations</li>
+                    <li>Better than Figma</li>
+                    <li>Weekly Updates</li>
+                    <li>Stable Support</li>
+                    <li>Fast Replies</li>
+                    <li>Creativity</li>
+                    <li>Hassle free</li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Freelancer -->
+            <div class="freelancer">
+                <ul>
+                    <h3>Freelancer</h3>
+                    <li>Full of bugs</li>
+                    <li>Near Layout</li>
+                    <li>Deadline shame</li>
+                    <li>Post-launch costs</li>
+                    <li>Hovers Not Always</li>
+                    <li>Worse than Figma</li>
+                    <li>Strage Silence</li>
+                    <li>Dev Rotation</li>
+                    <li>Hours of Silence</li>
+                    <li>Ordinary</li>
+                    <li>Stressful</li>
+                </ul>
+            </div>
+            <div class="sec5Sticky">
+                <div class="stickyAlina">Alina</div>
+                <div class="stickyCircle">
+                    <h3>Ideas</h3>
+                    <p>45</p>
+                </div>
+                <div class="stickyFreelancer">
+                    Freelancer
+                </div>
+            </div>
+        </section>
+
+        <section id="section6" class="saveMoney section6">
+            <div>
+                <h1>Let's&nbsp;&nbsp;&nbsp; turn Your</h1>
+            </div>
+            <div>
+                <h1>Usd&nbsp;&nbsp;&nbsp; <span>Loss</span> &nbsp; into</h1>
+            </div>
+            <div>
+                <h1><span>profit</span>&nbsp;&nbsp;&nbsp; with</h1>
+            </div>
+            <div>
+                <h1>cost-effective <span>collab</span></h1>
+            </div>
+        </section>
+
+        <section class="pricing section7">
+            <div class="priceCards">
+                <div class="priceCard">
+                    <div class="info">
+                        <h3>Rate in Usd</h3>
+                        <p>Enter the current rate you are paying for development</p>
+                    </div>
+                    <div class="price">
+                        <input type="range" min="0" max="100" value="30" id="rateInput">
+                        <p><span id="rateValue">30</span> usd</p>
+                    </div>
+                </div>
+
+                <div class="priceCard">
+                    <div class="info">
+                        <h3>time</h3>
+                        <p>your average required development hours per month</p>
+                    </div>
+                    <div class="price">
+                        <input type="range" min="0" max="200" value="80" id="hoursInput">
+                        <p><span id="hoursValue">80</span> hours</p>
+                    </div>
+                </div>
+
+                <div class="priceCard">
+                    <div class="info">
+                        <h3>missed opportunities</h3>
+                        <p>your potential yearly loss compared to my rates</p>
+                    </div>
+                    <div class="price">
+                        <p id="formulaText">$30 x 80 x 12 months =</p>
+                        <p><span id="totalLoss">$28,800</span> usd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section8">
+            <div class="contactContainer">
+                <div>
+                    <a href="">Whatsapp</a>
+                </div>
+                <div>
+                    <a href="">LinkdIn Account</a>
+                </div>
+                <div>
+                    <a href="">umer78f@gmail.com</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer section9">
+            <div>
+                <div class="footerText">
+                    Frontend Crafty
+                </div>
+            </div>
+            <div class="footerNav">
+                <div>umer78f@gmail.com</div>
+                <div class="footerLinks"><a href="">About me</a><a href="">why me</a><a href="">projects</a><a
+                        href="">save money</a></div>
+                <div>Designed by Umar Farooq</div>
+            </div>
+        </section>
+
+
+        <section class="contactForm">
+            <div class="formContainer">
+                <div class="contactRow">
+                    <p id="p1">Hey, Umar! My name is</p>
+                    <div class="inputWrapper1 inputWrapper">
+                        <input id="inp1" type="text" placeholder="Your Name">
+                    </div>
+                    <p id="p2">and I am from</p>
+                    <div class="inputWrapper2 inputWrapper">
+                        <input id="inp2" type="text" placeholder="Country">
+                    </div>
+                </div>
+                <div class="contactRow">
+                    <p id="p3">Let's connect about</p>
+                    <button type="button">Collaboration</button>
+                    <button type="button">Potential Project</button>
+                    <button type="button">Networking</button>
+                </div>
+                <div class="contactRow">
+                    <p id="p4">We can talk in more detail at </p>
+                    <div class="inputWrapper3 inputWrapper">
+                        <input id="inp3" type="email" placeholder="name@email.com">
+                    </div>
+                    <button type="button">Whatsapp/Linkdin</button>
+                    <button type="button">Email</button>
+                </div>
+                <div class="contactRow">
+                    <p id="p5">In short, </p>
+                    <div class="inputWrapper4 inputWrapper">
+                        <input id="inp4" type="text" placeholder="Type your message">
+                    </div>
+                </div>
+            </div>
+            <div class="sendForm">
+                <p>Send a form</p>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
+        integrity="sha512-oJ8QbaQThQoJZ7oEv+29jfPM6CcP+zUxh3PKJs1vyOhx0UraUrE7PQgeItu3dOuCJyrzWpoYMsVjkkPEBzbUqw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"
+        integrity="sha512-OaIE7ud4P04EhnBuhEcm0wQSceIxbi2pV03oBLS/+F6ampfxsnxcIxOp7H2eF9G7N0kEht0VAzOLG+dTLSo17Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="Animation.js"></script>
+</body>
+
+</html>
